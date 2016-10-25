@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_average_income_taxby_country_app"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="bbobbo216.averageincometaxbycountryapp.AverageIncomeTaxbyCountryApp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/result2"
+        android:textSize="24sp"
+        android:layout_below="@+id/result1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/result4"
+        android:textSize="24sp"
+        android:layout_below="@+id/result3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/result3"
+        android:textSize="24sp"
+        android:layout_below="@+id/result2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/choose_residence"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:text="@string/China"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radiobtn_china"
+            android:textSize="24sp"
+            android:layout_marginTop="13dp"
+            android:layout_below="@+id/choose_residence"
+            android:layout_alignLeft="@+id/calculate_btn"
+            android:layout_alignStart="@+id/calculate_btn"
+            android:checked="false"
+            android:duplicateParentState="false" />
+
+        <RadioButton
+            android:text="@string/Germany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radiobtn_germany"
+            android:textSize="24sp"
+            android:layout_below="@+id/radiobtn_china"
+            android:layout_alignLeft="@+id/radiobtn_china"
+            android:layout_alignStart="@+id/radiobtn_china" />
+
+        <RadioButton
+            android:text="@string/Sweden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radiobtn_sweden"
+            android:textSize="24sp"
+            android:layout_below="@+id/radiobtn_germany"
+            android:layout_alignLeft="@+id/radiobtn_germany"
+            android:layout_alignStart="@+id/radiobtn_germany" />
+
+        <RadioButton
+            android:text="@string/USA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radiobtn_usa"
+            android:textSize="24sp"
+            android:layout_below="@+id/radiobtn_sweden"
+            android:layout_alignLeft="@+id/radiobtn_sweden"
+            android:layout_alignStart="@+id/radiobtn_sweden" />
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/income"
+        android:hint="@string/income"
+        android:textSize="29sp"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="38dp" />
+
+    <TextView
+        android:text="@string/choose_residence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/choose_residence"
+        tools:text="@string/choose_residence"
+        android:textSize="31sp"
+        android:textColor="@android:color/black"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:layout_below="@+id/income"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:id="@+id/result1"
+        android:textSize="24sp"
+        android:layout_below="@+id/radiogroup"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="@string/calculate_btn"
+        android:id="@+id/calculate_btn"
+        tools:text="@string/calculate_btn"
+        android:textSize="24sp"
+        android:layout_height="60dp"
+        android:layout_width="350dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp" />
+
+</RelativeLayout>

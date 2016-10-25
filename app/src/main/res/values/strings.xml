@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Average Income Tax by Country App</string>
+    <string name="income">Enter your Last Year Income</string>
+    <string name="title">Average Income Tax</string>
+    <string name="choose_residence">Country of Residence</string>
+    <string name="calculate_btn">Calculate Income Tax</string>
+    <string name="China">China</string>
+    <string name="Sweden">Sweden</string>
+    <string name="Germany">Germany</string>
+    <string name="USA">USA</string>
+    <string name="choose_calculate">Type of Calculation</string>
+    <string name="Subtraction">Subtraction</string>
+    <string name="Addtion">Addtion</string>
+    <string name="Multiplication">Multiplication</string>
+    <string name="income2">Enter your Extra Income</string>
+</resources>
